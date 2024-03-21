@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #262433;
+}
+
+
+.bg_video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+
+
+/*logo*/
+.LOGO{
+  position: absolute;
+  top:80vh;
+  right: 0;
+  padding: 12px;
+ 
+ 
+}
+
+/*nav*/
+nav {
+  float: left;
+  width: 10%;
+  padding: 20px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.menu .toggle {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  border: 3.5px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1.25s;
+  z-index: 5;
+}
+
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
+}
+
+
+
+.menu li {
+  transition: 0.5s;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+  list-style: none;
+}
+
+.menu.active li {
+  scale: 1;
+}
+
+.menu li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  color: var(--clr);
+  border: 3.5px solid white;
+  background-color: transparent;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15), 0 0 0 2px;
+  transition: 0.5s;
+  gap: 10px; 
+  
+}
+
+
+.menu li a span {
+  position: absolute; 
+  top: 50%;
+  left: 100%; 
+  transform: translate(0, -50%);
+  font-size: 1.2rem;
+  color: var(--clr);
+  opacity: 0;
+  z-index: 0; 
+  transition: 0.5s;
+  
+}
+
+.menu li:hover a span {
+  left: calc(100% + 10px); 
+  opacity: 1;
+}
+
+.menu li:hover a {
+  background: var(--clr);
+  font-size: 2.5rem;
+  box-shadow: 0 0 0 2px var(--clr),
+              0 0 35px var(--clr),
+              0 0 55px var(--clr),
+              0 0 110px var(--clr),
+              0 0 440px var(--clr);
+}
+.menu li:hover img {
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+
+@media(min-aspect-ratio:16/9) {
+  .bg_video{
+      width: 120rem;
+      height: auto;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  
+  
+  }
+  
+  @media (max-width: 425px) {
+
+ 
+ 
+  }
+  
+
