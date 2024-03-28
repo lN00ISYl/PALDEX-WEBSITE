@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .background img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 0;
+  }
+  .navition_bar{
+    display: flex;
+    position: relative;
+  }
+  
+  .navition_bar .nav{
+    position: fixed;
+    height: 100%;
+    width: 10%;
+    padding: 20px;
+  
+    
+  }
+  .nav .selected{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  
+  .selected li .logo_selected{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+    border: 3.5px solid #fc840c;
+    position: relative;
+    display: flex;
+    background: transparent;
+    font-size: 2.5rem;
+    box-shadow: 0 0 0 2px var(--clr),
+                0 0 35px var(--clr),
+                0 0 55px var(--clr),
+                0 0 110px var(--clr),
+                0 0 440px var(--clr);
+  
+  
+  }
+  .navition_bar ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navition_bar ul li {
+    align-items: center;
+    list-style: none;
+  }
+  .navition_bar ul li a{
+   
+    display: flex;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 3.5px solid #fc840c;
+  }
+  .navition_bar ul li:hover a{
+    background: var(--clr);
+    font-size: 2.5rem;
+    box-shadow: 0 0 0 2px var(--clr),
+                0 0 35px var(--clr),
+                0 0 55px var(--clr),
+                0 0 110px var(--clr),
+                0 0 440px var(--clr);
+  }
+  
+  .navition_bar ul li:hover img{
+    width: 90px;
+    height: 90px;
+    transition: 0.5s;
+  }
+  
+  .navition_bar ul li span{
+    position: absolute;
+  
+    justify-content: center;
+    text-align: center;
+    left: 30%; /* Initially position the text outside the circle on the right */
+    font-size: 1.2rem;
+    color: var(--clr);
+    opacity: 0;
+    z-index: 0; /* Ensure the text is behind the logo */
+    transition: 0.5s;
+    
+  }
+  
+  .navition_bar ul li:hover span{
+    left: calc(70% + 5px); /* Move the text to the right side of the circle on hover */
+    opacity: 1;
+  }
+  
+  
+  .navition_bar .content{
+    width: 100%;
+    margin-left:192px;
+  }
+  .navition_bar .content header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /*cards*/
+  .pal_container {
+    display: flex; /* Use flexbox for the container */
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+  }
+  
+  .sec {
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+    transform: scale(0.9);
+    border: 2px solid #999999;
+    margin: 10px; 
+    margin-bottom: 70px;
+  }
+  
+  .sec:hover {
+  transform: scale(0.8);
+  }
+  
+  .bg1 {
+  background-image: url(img/bg1.jpg);
+  }
+  
+  .bg2 {
+  background-image: url(img/bg2.jpg);
+  }
+  
+  .bg3 {
+  background-image: url(img/bg3.jpg);
+  }
+  
+  .sec img {
+  width: 100%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  }
+  
+  .sec h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color:#fff;
+  z-index: 9;
+  transition: all .5s ease-in-out;
+  }
+  
+  .sec:hover h1 {
+  transform: scale(1.4);
+  }
+  
+  .sec:hover img {
+  transform: scale(1.4);
+  opacity: 1;
+  }
+  
+  @media (max-width: 769px) {
+  .sec {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  }
+  
+  @media (max-width: 576px) {
+  body {
+    height: auto;
+    overflow: unset;
+  }
+  .sec {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .sec:hover img {
+    transform: scale(1.2);
+  }
+  .sec:hover h1 {
+    transform: scale(1);
+  }
+  }
+  
