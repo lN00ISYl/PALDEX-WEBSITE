@@ -25,7 +25,7 @@
 .navition_bar .nav{
   position: fixed;
   height: 100%;
-  width: 10%;
+  width: 7.5%;
   padding: 20px;
 
   
@@ -34,8 +34,9 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   list-style: none;
+  
 }
 
 
@@ -48,9 +49,9 @@
   border: 3.5px solid rgb(59, 206, 54);
   position: relative;
   display: flex;
-  background: transparent;
-  font-size: 2.5rem;
-  box-shadow: 0 0 0 2px var(--clr),
+  
+  background:#bbda9c;
+  box-shadow: 0 0 0 2px var(--clr),/*glow effect on the buttons when hovered*/
               0 0 35px var(--clr),
               0 0 55px var(--clr),
               0 0 110px var(--clr),
@@ -80,8 +81,8 @@
   border: 3.5px solid rgb(59, 206, 54);
 }
 .navition_bar ul li:hover a{
+  
   background: var(--clr);
-  font-size: 2.5rem;
   box-shadow: 0 0 0 2px var(--clr),/*glow effect on the buttons when hovered*/
               0 0 35px var(--clr),
               0 0 55px var(--clr),
@@ -90,26 +91,24 @@
 }
 
 .navition_bar ul li:hover img{
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   transition: 0.5s;
 }
 
 .navition_bar ul li span{
   position: absolute;
-
   justify-content: center;
   text-align: center;
   left: 30%; /* Initially position the text outside the circle on the right */
-  color: var(--clr);
   opacity: 0;
-  z-index: 0; 
+
   transition: 0.5s;
   
 }
 
 .navition_bar ul li:hover span{
-  left: calc(70% + 5px); /* Move the text to the right side of the circle on hover */
+  left: calc(80% + 5px); /* Move the text to the right side of the circle on hover */
   opacity: 1;
 }
 
@@ -119,9 +118,10 @@
 .navition_bar .content{
   width: 100%;
   margin-left:192px;
+  
 }
 .navition_bar .content header{
-  display: flex;
+
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,7 @@
 
 /*cards*/
 .pal_container {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap; 
   justify-content: space-evenly; 
 }
@@ -146,7 +146,6 @@
   background-size: cover;
   background-position: center;
   width: 30%;
-  text-align: center;
   position: relative;
   border-radius: 30px;
   transition: all .5s ease-in-out;
@@ -154,6 +153,7 @@
   border: 2px solid #999999;
   margin: 10px; 
   margin-bottom: 70px;
+  
 }
 
 .sec:hover {
@@ -161,26 +161,26 @@ transform: scale(0.8);
 }
 
 .bg1 {
-background-image: url(../images/plate/CaprityPlate.png);
+background-image: url(../images/plate/grass/CaprityPlate.png);
 }
 
 .bg2 {
-background-image: url(../images/plate/DinossomPlate.png);
+background-image: url(../images/plate/grass/DinossomPlate.png);
 }
 
 .bg3 {
-background-image: url(../images/plate/MammorestPlate.png);
+background-image: url(../images/plate/grass/MammorestPlate.png);
 }
 
 .bg4 {
-  background-image: url(../images/plate/RobinquillPlate.png);
+  background-image: url(../images/plate/grass/RobinquillPlate.png);
   }
 
 .bg5 {
-    background-image: url(../images/plate/TanzeePlate.png);
+    background-image: url(../images/plate/grass/TanzeePlate.png);
     }
 .bg6 {
-    background-image: url(../images/plate/WarsectPlate.png);
+    background-image: url(../images/plate/grass/WarsectPlate.png);
     }
     
 .sec img {
@@ -205,6 +205,30 @@ opacity: 1;
   .navition_bar .nav{
     width: 15%;
   }
+  .selected li .logo_selected{
+    width:100px;
+    height: 100px;
+    margin-bottom: -5px;
+  }
+  
+  .selected li .logo_selected img {
+    width: 150px;
+    height: 150px;
+  }
+  .navition_bar ul li a{
+    width: 65px;
+    height: 65px;
+    margin-bottom:15px;
+  }
+  .navition_bar ul li a img{
+    width: 100px;
+    height: 100px;
+  }
+  .navition_bar ul li:hover img{
+    width: 100px;
+    height: 100px;
+  }
+  
   
 
 }
@@ -213,7 +237,7 @@ opacity: 1;
 
 
 
-@media (max-width: 768px) {
+@media  only screen and (max-width: 900px) {
 
 .sec {
   width: 40%;
@@ -230,20 +254,43 @@ opacity: 1;
   width: 100%;
   margin-left:180px;
 }
+.selected li .logo_selected{
+  width:100px;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+  width: 150px;
+  height: 150px;
+}
+.navition_bar ul li a{
+  width: 65px;
+  height: 65px;
+  margin-bottom:13px;
+}
+.navition_bar ul li a img{
+  width: 100px;
+  height: 100px;
+}
+.navition_bar ul li:hover img{
+  width: 100px;
+  height: 100px;
+}
 
 
 }
 
 
 
-@media (max-width: 576px) {
+@media only screen and  (max-width: 600px) {
 
 .sec {
   width: 100%;
   margin-bottom: 10px;
 }
 .sec:hover img {
-  transform: scale(1.2);
+  transform: scale(1.2); 
 }
 
 
@@ -252,29 +299,44 @@ opacity: 1;
 }
 
 .selected li .logo_selected{
-  width:100px;
-  height: 100px;
+  width:80px;
+  height: 80px;
+  margin-bottom: -5px;
 }
 
 .selected li .logo_selected img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .navition_bar ul li a{
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 25px;
 }
 .navition_bar ul li a img{
-  width: 85px;
-  height: 85px;
+  width: 70px;
+  height: 70px;
 }
 .navition_bar ul li:hover img{
   width: 100px;
   height: 100px;
 }
-.navition_bar ul li:hover span img{
-  width: 65px;
-  height: 65px;
+
+.navition_bar ul li span{
+  position: absolute;
+  z-index: 0;
+  opacity: 1;
+  left: 28%;
+  margin-top: 80px;
+  border-bottom-width:  calc(100% + 100px);
+ 
+
+}
+.navition_bar ul li span img{
+width: 60px;
+height: 60px;
+ 
+
 }
 
 .navition_bar .content{

@@ -24,7 +24,7 @@
   .navition_bar .nav{
     position: fixed;
     height: 100%;
-    width: 10%;
+    width: 7.5%;
     padding: 20px;
   
     
@@ -33,8 +33,9 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     list-style: none;
+    
   }
   
   
@@ -47,8 +48,9 @@
     border: 3.5px solid #b69292;
     position: relative;
     display: flex;
-    background: transparent;
-    font-size: 2.5rem;
+
+
+    background:#e0cece;
     box-shadow: 0 0 0 2px var(--clr),
                 0 0 35px var(--clr),
                 0 0 55px var(--clr),
@@ -69,17 +71,17 @@
   .navition_bar ul li a{
    
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
     border-radius: 50%;
     border: 3.5px solid #b69292;
   }
   .navition_bar ul li:hover a{
     background: var(--clr);
-    font-size: 2.5rem;
+
     box-shadow: 0 0 0 2px var(--clr),
                 0 0 35px var(--clr),
                 0 0 55px var(--clr),
@@ -87,13 +89,8 @@
                 0 0 440px var(--clr);
   }
   .navition_bar ul li:hover img {
-    width: 100px;
-    height: 100px;
-    transition: 0.5s;
-  }
-  .navition_bar ul li:hover img{
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     transition: 0.5s;
   }
   
@@ -112,7 +109,7 @@
   }
   
   .navition_bar ul li:hover span{
-    left: calc(70% + 5px); /* Move the text to the right side of the circle on hover */
+    left: calc(80% + 5px); /* Move the text to the right side of the circle on hover */
     opacity: 1;
   }
   
@@ -121,12 +118,21 @@
     width: 100%;
     margin-left:192px;
   }
+
+  
+
   .navition_bar .content header{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
    
+  }
+
+  .navition_bar .content header img{
+    height:250px; 
+    width:250px;
+  
   }
   
   /*cards*/
@@ -138,7 +144,6 @@
   
   .sec {
     background-size: cover;
-
     background-position: center;
     width: 30%;
     text-align: center;
@@ -156,15 +161,24 @@
   }
   
   .bg1 {
-  background-image: url(img/bg1.jpg);
+  background-image: url(../images/plate/neutral/CattivaPlate.png);
   }
   
   .bg2 {
-  background-image: url(img/bg2.jpg);
+  background-image: url(../images/plate/neutral/ChikipiPlate.png);
   }
   
   .bg3 {
-  background-image: url(img/bg3.jpg);
+  background-image: url(../images/plate/neutral/EikthyrdeerPlate.png);
+  }
+  .bg4 {
+  background-image: url(../images/plate/neutral/LamballPlate.png);
+  }
+  .bg5 {
+  background-image: url(../images/plate/neutral/MozzarinaPlate.png);
+  }
+  .bg6 {
+  background-image: url(../images/plate/neutral/NitewingPlate.png);
   }
   
   .sec img {
@@ -172,47 +186,163 @@
   opacity: 0;
   transition: all .5s ease-in-out;
   }
-  
-  .sec h1 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color:#fff;
-  z-index: 9;
-  transition: all .5s ease-in-out;
-  }
-  
-  .sec:hover h1 {
-  transform: scale(1.4);
-  }
+
   
   .sec:hover img {
   transform: scale(1.4);
   opacity: 1;
   }
   
-  @media (max-width: 769px) {
-  .sec {
-    width: 40%;
-    margin-bottom: 20px;
+ /*RESPONSIVE CODE*/
+
+
+
+@media (max-width: 1024px) {
+  .navition_bar .nav{
+    width: 15%;
   }
-  }
-  
-  @media (max-width: 576px) {
-  body {
-    height: auto;
-    overflow: unset;
-  }
-  .sec {
-    width: 95%;
-    margin-bottom: 30px;
-  }
-  .sec:hover img {
-    transform: scale(1.2);
-  }
-  .sec:hover h1 {
-    transform: scale(1);
-  }
+  .selected li .logo_selected{
+    width:100px;
+    height: 100px;
+    margin-bottom: -5px;
   }
   
+  .selected li .logo_selected img {
+    width: 150px;
+    height: 150px;
+  }
+  .navition_bar ul li a{
+    width: 65px;
+    height: 65px;
+    margin-bottom:15px;
+  }
+  .navition_bar ul li a img{
+    width: 100px;
+    height: 100px;
+  }
+  .navition_bar ul li:hover img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+
+}
+
+
+
+
+
+@media  only screen and (max-width: 900px) {
+
+.sec {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.navition_bar .nav{
+  width: 20%;
+}
+.navition_bar .content header img{
+  height:150px; 
+  width:150px;
+}
+.navition_bar .content{
+  width: 100%;
+  margin-left:180px;
+}
+.selected li .logo_selected{
+  width:100px;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+  width: 150px;
+  height: 150px;
+}
+.navition_bar ul li a{
+  width: 65px;
+  height: 65px;
+  margin-bottom:13px;
+}
+.navition_bar ul li a img{
+  width: 100px;
+  height: 100px;
+}
+.navition_bar ul li:hover img{
+  width: 100px;
+  height: 100px;
+}
+
+
+}
+
+
+
+@media only screen and  (max-width: 600px) {
+
+.sec {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sec:hover img {
+  transform: scale(1.2); 
+}
+
+
+.navition_bar .nav{
+  width: 32%;
+}
+
+.selected li .logo_selected{
+  width:80px;
+  height: 80px;
+  margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+  width: 100px;
+  height: 100px;
+}
+.navition_bar ul li a{
+  width: 55px;
+  height: 55px;
+  margin-bottom: 25px;
+}
+.navition_bar ul li a img{
+  width: 70px;
+  height: 70px;
+}
+.navition_bar ul li:hover img{
+  width: 100px;
+  height: 100px;
+}
+
+.navition_bar ul li span{
+  position: absolute;
+  z-index: 0;
+  opacity: 1;
+  left: 28%;
+  margin-top: 80px;
+  border-bottom-width:  calc(100% + 100px);
+ 
+
+}
+.navition_bar ul li span img{
+width: 60px;
+height: 60px;
+ 
+
+}
+
+.navition_bar .content{
+  width: 70%;
+  margin-left:160px;
+}
+
+.navition_bar .content header img{
+  height:140px; 
+  width:140px;
+}
+
+}

@@ -1,0 +1,485 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+.background img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 0;
+  }
+
+
+  /*nav*/
+.nav{
+  display: flex;
+  position: sticky; /* Add this property */
+  top: 0; /* Add this property */
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+  z-index: 1;
+
+  }
+
+  .nav a{
+    list-style-type: none;
+  }
+
+  .nav .home a{
+    display: flex;
+    height: 90px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3.5px solid rgb(255, 255, 255);
+  
+  } 
+.nav .header {
+  text-align: center;
+  position: fixed;
+  margin-left: 750px;
+  font-size: 90px;
+  display: flex;
+  color:white
+}
+
+
+/*content*/
+  .content{
+    display: flex;
+    position: relative;
+  
+  }
+
+
+  .selected{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+
+
+
+ 
+
+
+  /*cards*/
+  .content .cards
+  {
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+  
+
+  .pals {
+    background-size: cover;
+    width: auto;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 253, 253);
+    margin: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
+
+.pals img {
+    border-radius: 30px;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.pals:hover {
+    transform: scale(1.2); 
+}
+
+
+
+ /* neutral */
+.cards .neutrallogo{
+ display: flex;
+ align-items: center;
+ width: 70%;
+
+  
+}
+
+.neutrallogo li{
+    list-style: none;
+}
+
+.cards .neutrallogo li {
+
+    display: flex;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 19px;
+    border-radius: 50%;
+    margin-left: 30%;
+    border: 3.5px solid #b69292;
+    box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+    0 0 35px var(--clr),
+    0 0 23px var(--clr),
+    0 0 1px var(--clr),
+    0 0 0px var(--clr);
+
+  }
+
+  .cards .neutrallogo li span {
+    position: absolute;
+    margin-left: 15%;
+  }
+
+
+
+
+  /* grass */
+.cards .grasslogo{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    
+     
+   }
+   
+   .grasslogo li{
+       list-style: none;
+   }
+   
+   .cards .grasslogo li {
+   
+       display: flex;
+       height: 70px;
+       width: 70px;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 19px;
+       border-radius: 50%;
+       margin-left: 30%;
+       border: 3.5px solid rgb(59, 206, 54);
+       box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+       0 0 35px var(--clr),
+       0 0 23px var(--clr),
+       0 0 1px var(--clr),
+       0 0 0px var(--clr);
+
+     }
+   
+     .cards .grasslogo li span {
+       position: absolute;
+       margin-left: 15%;
+     }
+
+
+     /* water */
+.cards .Waterlogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Waterlogo li{
+     list-style: none;
+ }
+ 
+ .cards .Waterlogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #0c86ff;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Waterlogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+  
+
+    /* fire */
+.cards .Firelogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Firelogo li{
+     list-style: none;
+ }
+ 
+ .cards .Firelogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #fc840c;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Firelogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+
+    /* ground */
+.cards .Groundlogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Groundlogo li{
+     list-style: none;
+ }
+ 
+ .cards .Groundlogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #b87c16;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Groundlogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+   /* ice */
+.cards .Icelogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Icelogo li{
+     list-style: none;
+ }
+ 
+ .cards .Icelogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #05cfcf;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Icelogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+  /* electric */
+.cards .Electriclogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Electriclogo li{
+     list-style: none;
+ }
+ 
+ .cards .Electriclogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #ebc138;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Electriclogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+
+
+/* Dark */
+.cards .Darklogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Darklogo li{
+     list-style: none;
+ }
+ 
+ .cards .Darklogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #ec0478;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Darklogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+   /* Dragon */
+.cards .Dragonlogo{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  
+   
+ }
+ 
+ .Dragonlogo li{
+     list-style: none;
+ }
+ 
+ .cards .Dragonlogo li {
+ 
+     display: flex;
+     height: 70px;
+     width: 70px;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 19px;
+     border-radius: 50%;
+     margin-left: 30%;
+     border: 3.5px solid #da6beb;
+     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+     0 0 35px var(--clr),
+     0 0 23px var(--clr),
+     0 0 1px var(--clr),
+     0 0 0px var(--clr);
+
+   }
+ 
+   .cards .Dragonlogo li span {
+     position: absolute;
+     margin-left: 15%;
+   }
+
+   .description{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 60px;
+    
+   }
+
+   .map {
+    position: fixed; 
+
+   }
+
+
+   .map li{
+    list-style: none;
+   }
+  
+   .map li img{
+    box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+                0 0 35px var(--clr),
+                0 0 23px var(--clr),
+                0 0 1px var(--clr),
+                0 0 4px var(--clr);
+   }
