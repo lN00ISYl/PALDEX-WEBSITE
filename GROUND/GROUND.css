@@ -1,12 +1,9 @@
 *{
-
   padding: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-
 .background img{
   position: fixed;
   top: 0;
@@ -19,119 +16,57 @@
   z-index: 0;
 }
 
-
-/*nav*/
-.nav{
-display: flex;
-position: sticky; /* Add this property */
-top: 0; /* Add this property */
-height: auto;
-width: auto;
-padding: 20px;
-border: 2px solid black;
-background-color: rgba(0, 0, 0, 0.5); 
-  backdrop-filter: blur(10px); 
-z-index: 1;
-
-}
-
-.nav a{
-  list-style-type: none;
-}
-
-.nav .home a{
+.navition_bar{
   display: flex;
-  height: 90px;
-  width: 90px;
+  position: relative;
+}
+
+.navition_bar .nav{
+  position: fixed;
+  height: 100%;
+  width: 7.5%;
+  padding: 20px;
+
+  
+}
+.nav .selected{
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  border: 3.5px solid rgb(255, 255, 255);
-
-} 
-.nav .header {
-text-align: center;
-position: fixed;
-margin-left: 750px;
-font-size: 90px;
-display: flex;
-color:white
-}
-
-
-/*content*/
-.content{
   display: flex;
-  position: relative;
-
-}
-
-
-.selected{
-  display: flex;
-  position: relative;
-  width: 100%;
-  margin-bottom: 100px;
-  justify-content: center;
-}
-
-
-
-
-
-
-/*cards*/
-.content .cards
-{
-  
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 50%;
-  margin-left: 20px;
-  margin-top: 20px;
-
-}
-
-
-.pals {
-  background-size: cover;
-  width: auto;
-  position: relative;
-  border-radius: 30px;
-  border: 2px solid rgb(255, 253, 253);
-  margin: 10px;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease; /* Added transition for smooth scaling */
-}
-
-.pals img {
-  border-radius: 30px;
-  max-width: 100%; 
-  max-height: 100%; 
-}
-
-.pals:hover {
-  transform: scale(1.2); 
-}
-
-
-
-/* neutral */
-.cards .neutrallogo{
-display: flex;
-align-items: center;
-width: 70%;
-
-
-}
-
-.neutrallogo li{
+  margin-bottom: 25px;
   list-style: none;
 }
 
-.cards .neutrallogo li {
 
+.selected li .logo_selected{
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+  border: 3.5px solid #916519 ;
+  position: relative;
+  display: flex;
+  background:#e0c492;
+  box-shadow: 0 0 0 2px var(--clr),
+              0 0 35px var(--clr),
+              0 0 55px var(--clr),
+              0 0 110px var(--clr),
+              0 0 440px var(--clr);
+
+}
+.navition_bar ul{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navition_bar ul li {
+  align-items: center;
+  list-style: none;
+}
+.navition_bar ul li a{
+ 
   display: flex;
   height: 70px;
   width: 70px;
@@ -139,347 +74,275 @@ width: 70%;
   justify-content: center;
   margin-bottom: 19px;
   border-radius: 50%;
-  margin-left: 30%;
-  border: 3.5px solid #b69292;
-  box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-  0 0 35px var(--clr),
-  0 0 23px var(--clr),
-  0 0 1px var(--clr),
-  0 0 0px var(--clr);
-
+  border: 3.5px solid #916519 ;
 }
-
-.cards .neutrallogo li span {
-  position: absolute;
-  margin-left: 15%;
-}
-
-
-
-
-/* grass */
-.cards .grasslogo{
-  display: flex;
-  align-items: center;
-  width: 70%;
-  
-   
- }
- 
- .grasslogo li{
-     list-style: none;
- }
- 
- .cards .grasslogo li {
- 
-     display: flex;
-     height: 70px;
-     width: 70px;
-     align-items: center;
-     justify-content: center;
-     margin-bottom: 19px;
-     border-radius: 50%;
-     margin-left: 30%;
-     border: 3.5px solid rgb(59, 206, 54);
-     box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-     0 0 35px var(--clr),
-     0 0 23px var(--clr),
-     0 0 1px var(--clr),
-     0 0 0px var(--clr);
-
-   }
- 
-   .cards .grasslogo li span {
-     position: absolute;
-     margin-left: 15%;
-   }
-
-
-   /* water */
-.cards .Waterlogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Waterlogo li{
-   list-style: none;
-}
-
-.cards .Waterlogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #0c86ff;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Waterlogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
-
-  /* fire */
-.cards .Firelogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Firelogo li{
-   list-style: none;
-}
-
-.cards .Firelogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #fc840c;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Firelogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
-
-  /* ground */
-.cards .Groundlogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Groundlogo li{
-   list-style: none;
-}
-
-.cards .Groundlogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #b87c16;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Groundlogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
- /* ice */
-.cards .Icelogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Icelogo li{
-   list-style: none;
-}
-
-.cards .Icelogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #05cfcf;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Icelogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
-/* electric */
-.cards .Electriclogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Electriclogo li{
-   list-style: none;
-}
-
-.cards .Electriclogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #ebc138;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Electriclogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
-
-
-/* Dark */
-.cards .Darklogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Darklogo li{
-   list-style: none;
-}
-
-.cards .Darklogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #ec0478;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Darklogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
- /* Dragon */
-.cards .Dragonlogo{
-display: flex;
-align-items: center;
-width: 70%;
-
- 
-}
-
-.Dragonlogo li{
-   list-style: none;
-}
-
-.cards .Dragonlogo li {
-
-   display: flex;
-   height: 70px;
-   width: 70px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 19px;
-   border-radius: 50%;
-   margin-left: 30%;
-   border: 3.5px solid #da6beb;
-   box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
-   0 0 35px var(--clr),
-   0 0 23px var(--clr),
-   0 0 1px var(--clr),
-   0 0 0px var(--clr);
-
- }
-
- .cards .Dragonlogo li span {
-   position: absolute;
-   margin-left: 15%;
- }
-
- .description{
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin-top: 60px;
-  
- }
-
- .map {
-  position: fixed; 
-
- }
-
-
- .map li{
-  list-style: none;
- }
-
- .map li img{
-  box-shadow: 0 0 0 1px var(--clr),/*glow effect on the buttons when hovered*/
+.navition_bar ul li:hover a{
+  background: var(--clr);
+  font-size: 2.5rem;
+  box-shadow: 0 0 0 2px var(--clr),
               0 0 35px var(--clr),
-              0 0 23px var(--clr),
-              0 0 1px var(--clr),
-              0 0 4px var(--clr);
- }
+              0 0 55px var(--clr),
+              0 0 110px var(--clr),
+              0 0 440px var(--clr);
+}
+.navition_bar ul li:hover img {
+  width: 120px;
+  height: 120px;
+  transition: 0.5s;
+}
+.navition_bar ul li:hover img{
+  width: 90px;
+  height: 90px;
+  transition: 0.5s;
+}
+
+.navition_bar ul li span{
+  position: absolute;
+
+  justify-content: center;
+  text-align: center;
+  left: 30%; /* Initially position the text outside the circle on the right */
+  font-size: 1.2rem;
+  color: var(--clr);
+  opacity: 0;
+  z-index: 0; /* Ensure the text is behind the logo */
+  transition: 0.5s;
+  
+}
+
+.navition_bar ul li:hover span{
+  left: calc(80% + 5px); /* Move the text to the right side of the circle on hover */
+  opacity: 1;
+}
+
+
+.navition_bar .content{
+  width: 100%;
+  margin-left:192px;
+}
+.navition_bar .content header{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.navition_bar .content header img{
+  height:250px; 
+  width:250px;
+
+}
+
+/*cards*/
+.pal_container {
+  display: flex; /* Use flexbox for the container */
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+}
+
+.sec {
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  transition: all .5s ease-in-out;
+  transform: scale(0.9);
+  border: 2px solid #999999;
+  margin: 10px;
+  margin-bottom: 70px; 
+}
+
+.sec:hover {
+transform: scale(0.8);
+}
+
+.bg1 {
+  background-image: url(img/bg1.jpg);
+  }
+  
+  .bg2 {
+  background-image: url(img/bg2.jpg);
+  }
+  
+  .bg3 {
+  background-image: url(img/bg3.jpg);
+  }
+  .bg4 {
+  background-image: url(img/bg3.jpg);
+  }
+  .bg5 {
+  background-image: url(img/bg3.jpg);
+  }
+  .bg6 {
+  background-image: url(img/bg3.jpg);
+  }
+
+.sec img {
+width: 100%;
+opacity: 0;
+transition: all .5s ease-in-out;
+}
+
+
+
+.sec:hover img {
+transform: scale(1.4);
+opacity: 1;
+}
+
+/*RESPONSIVE CODE*/
+
+
+
+@media (max-width: 1024px) {
+.navition_bar .nav{
+  width: 15%;
+}
+.selected li .logo_selected{
+  width:100px;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+  width: 150px;
+  height: 150px;
+}
+.navition_bar ul li a{
+  width: 65px;
+  height: 65px;
+  margin-bottom:15px;
+}
+.navition_bar ul li a img{
+  width: 100px;
+  height: 100px;
+}
+.navition_bar ul li:hover img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+}
+
+
+
+
+
+@media  only screen and (max-width: 900px) {
+
+.sec {
+width: 40%;
+margin-bottom: 20px;
+}
+.navition_bar .nav{
+width: 20%;
+}
+.navition_bar .content header img{
+height:150px; 
+width:150px;
+}
+.navition_bar .content{
+width: 100%;
+margin-left:180px;
+}
+.selected li .logo_selected{
+width:100px;
+height: 100px;
+margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+width: 150px;
+height: 150px;
+}
+.navition_bar ul li a{
+width: 65px;
+height: 65px;
+margin-bottom:13px;
+}
+.navition_bar ul li a img{
+width: 100px;
+height: 100px;
+}
+.navition_bar ul li:hover img{
+width: 100px;
+height: 100px;
+}
+
+
+}
+
+
+
+@media only screen and  (max-width: 600px) {
+
+.sec {
+width: 100%;
+margin-bottom: 10px;
+}
+.sec:hover img {
+transform: scale(1.2); 
+}
+
+
+.navition_bar .nav{
+width: 32%;
+}
+
+.selected li .logo_selected{
+width:80px;
+height: 80px;
+margin-bottom: -5px;
+}
+
+.selected li .logo_selected img {
+width: 100px;
+height: 100px;
+}
+.navition_bar ul li a{
+width: 55px;
+height: 55px;
+margin-bottom: 25px;
+}
+.navition_bar ul li a img{
+width: 70px;
+height: 70px;
+}
+.navition_bar ul li:hover img{
+width: 100px;
+height: 100px;
+}
+
+.navition_bar ul li span{
+position: absolute;
+z-index: 0;
+opacity: 1;
+left: 28%;
+margin-top: 80px;
+border-bottom-width:  calc(100% + 100px);
+
+
+}
+.navition_bar ul li span img{
+width: 60px;
+height: 60px;
+
+
+}
+
+.navition_bar .content{
+width: 70%;
+margin-left:160px;
+}
+
+.navition_bar .content header img{
+height:140px; 
+width:140px;
+}
+
+}
+
