@@ -156,24 +156,24 @@
   }
   
   .bg1 {
-    background-image: url(img/bg1.jpg);
+    background-image: url(../images/plate/dark/CawgnitoPlate.png);
     }
     
     .bg2 {
-    background-image: url(img/bg2.jpg);
+    background-image: url(../images/plate/dark/DaedreamPlate.png);
     }
     
     .bg3 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/dark/DepressoPlate.png);
     }
     .bg4 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/dark/HelzephyrPlate.png);
     }
     .bg5 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/dark/HoocratesPlate.png);
     }
     .bg6 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/dark/TombatPlate.png);
     }
   
   .sec img {
@@ -316,7 +316,7 @@
   position: absolute;
   z-index: 0;
   opacity: 1;
-  left: 28%;
+  left: 30%;
   margin-top: 80px;
   border-bottom-width:  calc(100% + 100px);
  
@@ -337,6 +337,16 @@ height: 60px;
 .navition_bar .content header img{
   height:140px; 
   width:140px;
+}
+  
+.navition_bar ul li:hover span{
+  left: calc(25% + 5px); /* Move the text to the right side of the circle on hover */
+ 
+}
+.navition_bar ul li:hover img{
+width: 70px;
+height: 70px;
+transition: 0.5s;
 }
 
 }

@@ -156,24 +156,24 @@
 }
 
 .bg1 {
-    background-image: url(img/bg1.jpg);
+    background-image: url(../images/plate/electric/DazziPlate.png);
     }
     
     .bg2 {
-    background-image: url(img/bg2.jpg);
+    background-image: url(../images/plate/electric/GrizzboltPlate.png);
     }
     
     .bg3 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/electric/MossandaLuxPlate.png);
     }
     .bg4 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/electric/RayhoundPlate.png);
     }
     .bg5 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/electric/SparkitPlate.png);
     }
     .bg6 {
-    background-image: url(img/bg3.jpg);
+    background-image: url(../images/plate/electric/UnivoltPlate.png);
     }
 
 .sec img {
@@ -182,19 +182,7 @@
 	transition: all .5s ease-in-out;
 }
 
-.sec h1 {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color:#fff;
-	z-index: 9;
-	transition: all .5s ease-in-out;
-}
 
-.sec:hover h1 {
-	transform: scale(1.4);
-}
 
 .sec:hover img {
 	transform: scale(1.4);
@@ -330,7 +318,7 @@
     position: absolute;
     z-index: 0;
     opacity: 1;
-    left: 28%;
+    left: 30%;
     margin-top: 80px;
     border-bottom-width:  calc(100% + 100px);
    
@@ -352,6 +340,15 @@
     height:140px; 
     width:140px;
   }
-  
+    
+  .navition_bar ul li:hover span{
+    left: calc(25% + 5px); /* Move the text to the right side of the circle on hover */
+   
+  }
+  .navition_bar ul li:hover img{
+  width: 70px;
+  height: 70px;
+  transition: 0.5s;
+  }
   }
   

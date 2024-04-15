@@ -159,24 +159,24 @@ transform: scale(0.8);
 }
 
 .bg1 {
-  background-image: url(img/bg1.jpg);
+  background-image: url(../images/plate/ground/AnubisPlate.png);
   }
   
   .bg2 {
-  background-image: url(img/bg2.jpg);
+  background-image: url(../images/plate/ground/DigtoisePlate.png);
   }
   
   .bg3 {
-  background-image: url(img/bg3.jpg);
+  background-image: url(../images/plate/ground/DumudPlate.png);
   }
   .bg4 {
-  background-image: url(img/bg3.jpg);
+  background-image: url(../images/plate/ground/EikthyrdeerTerraPlate.png);
   }
   .bg5 {
-  background-image: url(img/bg3.jpg);
+  background-image: url(../images/plate/ground/FuddlerPlate.png);
   }
   .bg6 {
-  background-image: url(img/bg3.jpg);
+  background-image: url(../images/plate/ground/RushoarPlate.png);
   }
 
 .sec img {
@@ -318,30 +318,40 @@ height: 100px;
 }
 
 .navition_bar ul li span{
-position: absolute;
-z-index: 0;
-opacity: 1;
-left: 28%;
-margin-top: 80px;
-border-bottom-width:  calc(100% + 100px);
-
+  position: absolute;
+  z-index: 0;
+  opacity: 1;
+  left: 30%;
+  margin-top: 80px;
+  border-bottom-width:  calc(100% + 100px);
+ 
 
 }
 .navition_bar ul li span img{
 width: 60px;
 height: 60px;
-
+ 
 
 }
 
 .navition_bar .content{
-width: 70%;
-margin-left:160px;
+  width: 70%;
+  margin-left:160px;
 }
 
 .navition_bar .content header img{
-height:140px; 
-width:140px;
+  height:140px; 
+  width:140px;
+}
+  
+.navition_bar ul li:hover span{
+  left: calc(25% + 5px); /* Move the text to the right side of the circle on hover */
+ 
+}
+.navition_bar ul li:hover img{
+width: 70px;
+height: 70px;
+transition: 0.5s;
 }
 
 }
