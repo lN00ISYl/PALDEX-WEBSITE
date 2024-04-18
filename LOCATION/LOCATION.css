@@ -1,3 +1,13 @@
+*{
+
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
 .background img{
     position: fixed;
     top: 0;
@@ -13,15 +23,14 @@
   /*nav*/
 .nav{
   display: flex;
-  position: sticky; /* Add this property */
-  top: 0; /* Add this property */
+  position: sticky; 
+  top: 0; 
   height: auto;
   width: auto;
   padding: 20px;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the background */
-    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
-  z-index: 1; /* Add this property */
+  background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+  z-index: 1;
 
   }
 
@@ -75,7 +84,7 @@
     width: auto;
     position: relative;
     border-radius: 30px;
-    border: 2px solid rgb(255, 253, 253);
+    border: 2px solid rgb(0, 0, 0);
     margin: 10px;
     margin-bottom: 30px;
     transition: transform 0.3s ease; /* Added transition for smooth scaling */

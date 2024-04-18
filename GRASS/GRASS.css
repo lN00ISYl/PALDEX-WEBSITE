@@ -160,26 +160,47 @@
 transform: scale(0.8);
 }
 
-.bg1 {
-background-image: url(../images/plate/grass/CaprityPlate.png);
+.bg1_landscape {
+background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+width: 1060px;
 }
-
-.bg2 {
-background-image: url(../images/plate/grass/DinossomPlate.png);
-}
-
-.bg3 {
-background-image: url(../images/plate/grass/MammorestPlate.png);
-}
-
-.bg4 {
-  background-image: url(../images/plate/grass/RobinquillPlate.png);
+.bg1_portrait {
+  background-image: url(../images/plate/grass/CaprityPlate.png);
   }
 
-.bg5 {
+.bg2_landscape {
+background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+width: 1060px;
+}
+.bg2_portrait {
+background-image: url(../images/plate/grass/DinossomPlate.png);
+}
+.bg3_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+  width: 1060px;
+  }
+.bg3_portrait {
+background-image: url(../images/plate/grass/MammorestPlate.png);
+}
+.bg4_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+  width: 1060px;
+  }
+.bg4_portrait {
+  background-image: url(../images/plate/grass/RobinquillPlate.png);
+  }
+.bg5_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+  width: 1060px;
+    }
+.bg5_portrait {
     background-image: url(../images/plate/grass/TanzeePlate.png);
     }
-.bg6 {
+.bg6_landscape {
+background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/GRASS/GrassPlate.png);
+width: 1060px;
+}
+.bg6_portrait {
     background-image: url(../images/plate/grass/WarsectPlate.png);
     }
     
@@ -194,6 +215,7 @@ transition: all .5s ease-in-out;
 .sec:hover img {
 transform: scale(1.4);
 opacity: 1;
+border-radius: 30px;
 }
 
 

@@ -155,26 +155,46 @@
   transform: scale(0.8);
   }
   
-  .bg1 {
+  .bg1_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg1_portrait {
   background-image: url(../images/plate/ice/CryolinxPlate.png);
   }
-  
-  .bg2 {
+   .bg12_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg2_portrait {
   background-image: url(../images/plate/ice/FoxciclePlate.png);
   }
-  
-  .bg3 {
+   .bg3_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg3_portrait {
   background-image: url(../images/plate/ice/HangyuCrystPlate.png);
   }
-  
-  .bg4 {
+   .bg4_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg4_portrait {
   background-image: url(../images/plate/ice/IceKingpacaPlate.png);
   }
-
-  .bg5 {
+ .bg5_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg5_portrait {
   background-image: url(../images/plate/ice/SweePlate.png);
   }
-  .bg6 {
+   .bg6_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/ICE/IcePlate.png);
+  width: 1060px;
+  }
+  .bg6_portrait {
   background-image: url(../images/plate/ice/WumpoPlate.png);
   }
   
@@ -188,6 +208,7 @@
   
   .sec:hover img {
   transform: scale(1.4);
+  border-radius: 30px;
   opacity: 1;
   }
   

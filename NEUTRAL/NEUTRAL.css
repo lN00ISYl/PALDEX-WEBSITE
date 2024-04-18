@@ -24,7 +24,7 @@
   .navition_bar .nav{
     position: fixed;
     height: 100%;
-    width: 7.5%;
+    width: 10.5%;
     padding: 20px;
   
     
@@ -109,7 +109,7 @@
   }
   
   .navition_bar ul li:hover span{
-    left: calc(80% + 5px); /* Move the text to the right side of the circle on hover */
+    left: calc(69% + 5px); /* Move the text to the right side of the circle on hover */
     opacity: 1;
   }
   
@@ -160,30 +160,53 @@
   transform: scale(0.8);
   }
   
-  .bg1 {
-  background-image: url(../images/plate/neutral/CattivaPlate.png);
+  .pal1_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
   }
-  
-  .bg2 {
+  .pal1_portrait {
+    background-image: url(../images/plate/neutral/CattivaPlate.png);
+    }
+  .pal2_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
+  }
+  .pal2_portrait {
   background-image: url(../images/plate/neutral/ChikipiPlate.png);
   }
-  
-  .bg3 {
+  .pal3_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
+  }
+  .pal3_portrait {
   background-image: url(../images/plate/neutral/EikthyrdeerPlate.png);
   }
-  .bg4 {
+  .pal4_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
+  }
+  .pal4_portrait {
   background-image: url(../images/plate/neutral/LamballPlate.png);
   }
-  .bg5 {
+  .pal5_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
+  }
+  .pal5_portrait {
   background-image: url(../images/plate/neutral/MozzarinaPlate.png);
   }
-  .bg6 {
+  .pal6_landscape {
+  background-image: url(../images/LANDSCAPE_CARDS_AND_PLATES/NEUTRAL/NeutralPlate.png);
+  width: 1060px;
+  }
+  .pal6_portrait {
   background-image: url(../images/plate/neutral/NitewingPlate.png);
   }
   
   .sec img {
   width: 100%;
   opacity: 0;
+  border-radius: 30px;
   transition: all .5s ease-in-out;
   }
 
