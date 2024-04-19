@@ -24,7 +24,7 @@
   .navition_bar .nav{
     position: fixed;
     height: 100%;
-    width: 7.5%;
+    width: 10.5%;
     padding: 20px;
   
     
@@ -90,11 +90,7 @@
     height: 120px;
     transition: 0.5s;
   }
-  .navition_bar ul li:hover img{
-    width: 90px;
-    height: 90px;
-    transition: 0.5s;
-  }
+
   
   .navition_bar ul li span{
     position: absolute;

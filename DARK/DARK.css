@@ -24,7 +24,7 @@
   .navition_bar .nav{
     position: fixed;
     height: 100%;
-    width: 7.5%;
+    width: 10.5%;
     padding: 20px;
   
     
@@ -95,7 +95,6 @@
   
   .navition_bar ul li span{
     position: absolute;
-  
     justify-content: center;
     text-align: center;
     left: 30%; /* Initially position the text outside the circle on the right */
