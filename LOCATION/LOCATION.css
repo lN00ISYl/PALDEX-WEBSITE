@@ -445,6 +445,227 @@
 
    
    
-  
+  /*RESPONSIVE CODE*/
+
+  @media only screen and (max-width:980px){
+    .nav .home a {
+      height: 190px ;
+      width: 190px;
+    }
+    .nav .home a img{
+      height: 210px ;
+      width: 210px;
+    }
+
+    .nav .header{
+      margin-left: 390px;
+      top: 65px;
+    }
+
+    .description{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 750px;
+    }
+    .map{
+      position: relative;
+    }
+
+    /*cards*/
+    .content .cards{
+      width: 100%;
+      margin-top: 750px;
+    }
+
+
+    /* neutral */
+    .cards .neutrallogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .neutrallogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .neutrallogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .neutrallogo li span{
+      left: 300px;
+    }
+    .cards .neutrallogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+
+
+
+     /* grass */
+     .cards .grasslogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .grasslogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .grasslogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .grasslogo li span{
+      left: 300px;
+    }
+    .cards .grasslogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+
+     /* water */
+
+    .cards .Waterlogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Waterlogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Waterlogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Waterlogo li span{
+      left: 300px;
+    }
+    .cards .Waterlogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+
+     /* fire */
+     .cards .Firelogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Firelogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Firelogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Firelogo li span{
+      left: 300px;
+    }
+    .cards .Firelogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+    /* ground */
+    .cards .Groundlogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Groundlogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Groundlogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Groundlogo li span{
+      left: 300px;
+    }
+    .cards .Groundlogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+    /* ice */
+    .cards .Icelogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Icelogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Icelogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Icelogo li span{
+      left: 300px;
+    }
+    .cards .Icelogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+    /* electric */
+    .cards .Electriclogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Electriclogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Electriclogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Electriclogo li span{
+      left: 300px;
+    }
+    .cards .Electriclogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+    /* dark */
+    .cards .Darklogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Darklogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Darklogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Darklogo li span{
+      left: 300px;
+    }
+    .cards .Darklogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+    /* Dragon */
+    .cards .Dragonlogo{
+      width: 100%;
+      margin-left: 40px;
+    }
+    .cards .Dragonlogo li{
+      height: 100px;
+      width: 100px;
+    }
+    .cards .Dragonlogo li img{
+      height: 150px;
+      width: 150px;
+    }
+    .cards .Dragonlogo li span{
+      left: 300px;
+    }
+    .cards .Dragonlogo li span img{
+      height: 200px;
+      width: 200px;
+    }
+  }
 
 

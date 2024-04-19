@@ -8,8 +8,8 @@
 .bg_video{
 
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover ;
@@ -175,27 +175,61 @@ nav {
 
 
 
-@media (max-width: 1120px) {
-  nav{
-    width: 130px;
+@media only screen and (max-width: 980px ){
+  .LOGO img{
+    height: 200px;
+    width: 200px;
+  }
+  nav {
+    float: left;
+    width: 26.5%;
+    padding: 20px;
+  }
+
+  .menu .toggle{
+    height: 190px;
+    width: 190px;
     
   }
-  
+  .menu .toggle img{
+    width: 110px;
+    height: 110px;
   }
-  
-  @media (max-width: 576px) {
-    nav{
-      width: 120px;
-      
-    }
-    .LOGO{
-      width: 160px;
-      top: 82vh;
-    }
-    .LOGO img{
-      width: 130px;
-      height: 130px;
-    }
+
+  .menu .toggle span img{
+    top: 35px;
+    left: 33px;
+
   }
+
+  .menu.active .toggle span img{
+    top: 35px;
+    left: 34px;
+  }
+  .menu li a{
+    width: 140px;
+    height: 140px;
+  }
+
+  .menu li a img{
+    height:170px;
+    width:170px ;
+  }
+  .menu li:hover img{
+    height:190px;
+    width:190px ;
+  }
+  .map{
+    height: 190px;
+    width: 190px;
+    top:18px;
+    right: 16px;
+  }
+  .map img{
+    height: 130px;
+    width: 130px;
+  }
+
+}
   
 
