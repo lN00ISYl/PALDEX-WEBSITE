@@ -449,8 +449,8 @@
 
   @media only screen and (max-width:980px){
     .nav .home a {
-      height: 190px ;
-      width: 190px;
+      height: 160px ;
+      width: 160px;
     }
     .nav .home a img{
       height: 210px ;
@@ -458,8 +458,8 @@
     }
 
     .nav .header{
-      margin-left: 390px;
-      top: 65px;
+      margin-left: 360px;
+      top: 55px;
     }
 
     .description{
