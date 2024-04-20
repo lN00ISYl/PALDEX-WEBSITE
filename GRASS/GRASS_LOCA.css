@@ -48,14 +48,12 @@
     border: 3.5px solid rgb(255, 255, 255);
   
   } 
-.nav .header {
-  text-align: center;
-  position: fixed;
-  margin-left: 750px;
-  font-size: 90px;
-  display: flex;
-  color:white
-}
+  .nav .header {
+    position: fixed;
+    margin-left: 720px;
+    display: flex;
+    top: 10px;
+  }
 
 
 /*content*/
