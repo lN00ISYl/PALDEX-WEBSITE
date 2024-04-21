@@ -266,8 +266,9 @@
     height: 170px;
   }
   .navition_bar ul li:hover img{
-    width: 150px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
+    transition: 0.5s;
   }
   
   .navition_bar ul li span{
@@ -298,10 +299,6 @@
     left: calc(25% + 5px); /* Move the text to the right side of the circle on hover */
    
   }
-  .navition_bar ul li:hover img{
-  width: 70px;
-  height: 70px;
-  transition: 0.5s;
-  }
+ 
   
   }
